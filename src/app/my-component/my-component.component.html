@@ -1,0 +1,8 @@
+<div class="header">
+  <h4>{{ title }}</h4>
+  <p>{{ message }}</p>
+  <button (click)="onClick()">Show</button>
+  <div [hidden]="display">
+    <p>Secret message</p>
+  </div>
+</div>
