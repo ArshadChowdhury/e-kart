@@ -5,4 +5,11 @@
   <div [hidden]="display">
     <p>Secret message</p>
   </div>
+  <div>
+    <input [value]="name" (input)="onInputChange($event)" type="text" />
+    <p>Name = {{ name }}</p>
+    <button (click)="decrementCartNumber()">-</button>
+    <p>{{ cartNumber }}</p>
+    <button (click)="incrementCartNumber()">+</button>
+  </div>
 </div>
